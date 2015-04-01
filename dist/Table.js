@@ -10,6 +10,8 @@ var _classCallCheck = function (instance, Constructor) { if (!(instance instance
 
 var React = _interopRequire(require("react"));
 
+var PureRenderMixin = require("react/addons").addons.PureRenderMixin;
+
 var Immutable = _interopRequire(require("immutable"));
 
 var request = _interopRequire(require("superagent"));
@@ -21,6 +23,7 @@ var Table = (function (_React$Component) {
     this.state = {
       data: Immutable.List(),
       filteredData: Immutable.List() };
+    this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
   }
 
   _inherits(Table, _React$Component);

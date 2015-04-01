@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+const PureRenderMixin = require('react/addons').addons.PureRenderMixin;
 import Immutable from 'immutable';
 import request from 'superagent';
 
@@ -11,6 +12,8 @@ export default class Table extends React.Component {
       data: Immutable.List(),
       filteredData: Immutable.List(),
     };
+    this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
+    
   }
 
   componentWillMount() {
