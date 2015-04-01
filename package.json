@@ -4,7 +4,7 @@
   "description": "Example for blog post",
   "main": "index.js",
   "scripts": {
-      "build": "babel src -d dist && browserify dist/app.js -o demo/app.js"
+    "build": "babel src -d dist && browserify dist/app.js -o demo/app.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
     "babel": "^4.7.16",
     "browserify": "^9.0.3",
     "immutable": "^3.7.1",
-    "react": "^0.13.1"
+    "react": "^0.13.1",
+    "superagent": "^1.1.0"
   }
 }
