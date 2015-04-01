@@ -1,0 +1,33 @@
+{
+  "name": "regex-table-filter",
+  "version": "0.0.1",
+  "description": "Example for blog post",
+  "main": "index.js",
+  "scripts": {
+      "build": "babel src -d dist && browserify dist/app.js -o demo/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmfurlott/regex-table-filter.git"
+  },
+  "keywords": [
+    "react",
+    "immutable",
+    "table",
+    "search",
+    "regex",
+    "filter"
+  ],
+  "author": "Joseph Furlott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmfurlott/regex-table-filter/issues"
+  },
+  "homepage": "https://github.com/jmfurlott/regex-table-filter",
+  "dependencies": {
+    "babel": "^4.7.16",
+    "browserify": "^9.0.3",
+    "immutable": "^3.7.1",
+    "react": "^0.13.1"
+  }
+}
